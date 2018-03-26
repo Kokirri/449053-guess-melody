@@ -1,7 +1,7 @@
 # Личный проект «Угадай мелодию» [![Build status][travis-image]][travis-url]
 
 * Студент: [Иван Хрипков](https://up.htmlacademy.ru/ecmascript/4/user/449053).
-* Наставник: `Неизвестно`.
+* Наставник: [Артем Черкасов](https://htmlacademy.ru/profile/id530727).
 
 ---
 
