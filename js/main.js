@@ -27,26 +27,22 @@ let i = 0;
 
 document.addEventListener(`keydown`, function (evt) {
   if (evt.altKey === true && evt.keyCode === consts.RIGHT_KEYCODE) {
+    removeSection(i);
     if (i === arr.length - 1) {
-      removeSection(i);
-      i = arr.length - arr.length;
-      showSection(0);
+      i = 0;
     } else {
-      removeSection(i);
       i++;
-      showSection(i);
     }
+    showSection(i);
   }
   if (evt.altKey === true && evt.keyCode === consts.LEFT_KEYCODE) {
-    if (i === arr.length - arr.length) {
-      removeSection(i);
+    removeSection(i);
+    if (i === 0) {
       i = arr.length - 1;
-      showSection(arr.length - 1);
     } else {
-      removeSection(i);
       i--;
-      showSection(i);
     }
+    showSection(i);
   }
 });
 
