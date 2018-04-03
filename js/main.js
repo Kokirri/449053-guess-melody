@@ -29,7 +29,7 @@ document.addEventListener(`keydown`, function (evt) {
   if (evt.altKey === true && evt.keyCode === consts.RIGHT_KEYCODE) {
     if (i === arr.length - 1) {
       removeSection(i);
-      i = 0;
+      i = arr.length - arr.length;
       showSection(0);
     } else {
       removeSection(i);
@@ -40,8 +40,8 @@ document.addEventListener(`keydown`, function (evt) {
   if (evt.altKey === true && evt.keyCode === consts.LEFT_KEYCODE) {
     if (i === arr.length - arr.length) {
       removeSection(i);
-      i = 3;
-      showSection(3);
+      i = arr.length - 1;
+      showSection(arr.length - 1);
     } else {
       removeSection(i);
       i--;
