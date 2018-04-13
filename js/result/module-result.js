@@ -1,4 +1,4 @@
-import {getElement} from "../get-element";
+import getElement from "../get-element";
 import {removeSection, showSection} from "../show-section";
 import moduleWelcome from "../module-welcome";
 
@@ -18,4 +18,5 @@ replayButton.addEventListener(`click`, function () {
   removeSection(moduleResult);
   showSection(moduleWelcome);
 });
+
 export default moduleResult;

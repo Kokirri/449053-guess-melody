@@ -1,4 +1,4 @@
-import {getElement} from "./get-element";
+import getElement from "./get-element";
 import {removeSection, showSection} from "./show-section";
 import moduleGenre from "./module-genre";
 

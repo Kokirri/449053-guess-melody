@@ -1,4 +1,4 @@
-import {getElement} from './get-element';
+import getElement from './get-element';
 import {showSection, removeSection} from './show-section.js';
 import moduleArtist from "./module-artist";
 
@@ -13,7 +13,6 @@ const moduleWelcome = getElement(`<section class="main main--welcome">
     </p>
   </section>`);
 
-showSection(moduleWelcome);
 const playButton = moduleWelcome.querySelector(`.main-play`);
 playButton.addEventListener(`click`, function () {
   removeSection(moduleWelcome);
