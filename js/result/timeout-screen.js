@@ -1,8 +1,8 @@
-import {getElement} from "../get-element";
+import getElement from "../get-element";
 import {removeSection, showSection} from "../show-section";
 import moduleWelcome from "../module-welcome";
 
-export const timeout = getElement(`<section class="main main--result">
+const timeout = getElement(`<section class="main main--result">
     <section class="logo" title="Угадай мелодию"><h1>Угадай мелодию</h1></section>
 
     <h2 class="title">Увы и ах!</h2>
@@ -15,3 +15,5 @@ replayButton.addEventListener(`click`, function () {
   removeSection(timeout);
   showSection(moduleWelcome);
 });
+
+export default timeout;

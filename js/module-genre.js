@@ -1,8 +1,8 @@
-import {getElement} from "./get-element";
+import getElement from "./get-element";
 import {removeSection, showSection} from "./show-section";
 import moduleResult from "./result/module-result";
-import {timeout} from "./result/timeout-screen";
-import {attempt} from "./result/attempts-screen";
+import timeout from "./result/timeout-screen";
+import attempt from "./result/attempts-screen";
 
 const moduleGenre = getElement(`<section class="main main--level main--level-genre">
     <svg xmlns="http://www.w3.org/2000/svg" class="timer" viewBox="0 0 780 780">
